@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Red Hat Mono', monospace;
+}
+
+body {
+    background-color: rgb(179 185 149);
+}
+
+.calculator {
+    background-color: rgb(198 176 188);
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30vw;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.display {
+    overflow-x: hidden;
+    border: 2px solid rgb(225 184 127);
+    border-radius: 10px;
+    padding: 10px;
+    width: 27.5vw;
+    height: 7vh;
+    margin: 10px 8px 10px 8px;
+    background-color: rgb(241 230 178)
+}
+
+button {
+    border: 1px solid rgb(243, 240, 240);
+    border-radius: 10px;
+    height: 6vh;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px 10px 5px 10px;
+    transition: border-color .5s ease-in, background-color .5s, box-shadow .5s;
+}
+
+button:hover {
+    font-weight: bold;
+    color: white;
+    background-color:rgb(179 185 149);
+}
+
+.num , .decimal {
+    background-color: rgb(223 136 119);
+}
+
+.op {
+    background-color: rgb(166 184 193);
+}
+
+#all-clear , #result {
+    background-color: rgb(166 184 193);
+}
+
+#equal {
+    height: 6vh;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
